@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Sabelo-Mhlathi-Rosebank
+.github.io/WEDO5020-POE-/sitemap.xml
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://[your-github-username].github.io/[your-repo-name]/sitemap.xml

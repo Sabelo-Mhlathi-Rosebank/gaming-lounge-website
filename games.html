@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore FPS and esports games available at Diepkloof Gaming Lounge including Warzone, Fortnite, Apex Legends and more.">
+  <meta name="keywords" content="FPS games, esports, Warzone, Fortnite, Apex Legends, Valorant, FIFA, gaming Soweto">
+  <meta name="author" content="Trinity Sabelo Mhlathi">
+  <title>Diepkloof Gaming Lounge - Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-content">
+    <h2>Diepkloof Gaming Lounge</h2>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p>Loading...</p>
+  </div>
+</div>
+
+    <header>
+      <nav class="navbar">
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Games We Offer</h1>
+      <p>Explore a wide range of FPS and esports titles available on high-performance systems.</p>
+    </section>
+
+<section>
+  <h2>Search Games</h2>
+  <input type="text" id="game-search" placeholder="Search for a game...">
+  <p id="no-results" style="display:none;">No games found.</p>
+</section>
+
+<section class="games-category">
+  <h2>FPS Games</h2>
+  <img src="images/fps games.jpg"
+    srcset="images/fps games.jpg 800w,
+            images/fps games.jpg 400w"
+    sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 90vw,
+           800px"
+    alt="FPS gaming setup">
+  <ul id="fps-list">
+    <li>Call of Duty: Warzone</li>
+    <li>Fortnite</li>
+    <li>Apex Legends</li>
+  </ul>
+  <button id="load-more-fps" class="btn">Load More FPS Games</button>
+</section>
+
+<section class="games-category">
+  <h2>Esports Games</h2>
+  <img src="images/esports games.jpg"
+    srcset="images/esports games.jpg 800w,
+            images/esports games.jpg 400w"
+    sizes="(max-width: 480px) 100vw,
+           (max-width: 768px) 90vw,
+           800px"
+    alt="Esports gaming">
+  <ul id="esports-list">
+    <li>EA Sports FC</li>
+    <li>eFootball</li>
+    <li>Rocket League</li>
+  </ul>
+  <button id="load-more-esports" class="btn">Load More Esports Games</button>
+</section>
+
+    <section class="platforms">
+      <h2>Platforms Available</h2>
+      <ul>
+        <li>High-End Gaming PCs</li>
+        <li>PlayStation Consoles</li>
+        <li>Xbox Consoles</li>
+      </ul>
+    </section>
+
+    <section class="atmosphere">
+      <h2>The Gaming Experience</h2>
+      <p>Our lounge is designed to create an immersive and competitive environment for all gamers.
+      Whether you are playing casually or competing, you will experience a high-energy atmosphere.</p>
+      <p>We offer dedicated zones for PC, PlayStation, and Xbox gaming,
+      each equipped with high-performance systems and comfortable seating.</p>
+      <p>Weekend tournaments are hosted regularly, allowing players to compete and connect with others.</p>
+
+    <div class="gallery">
+  <div class="gallery-item">
+    <img src="images/Gaming Lounge PC.jpg"
+      srcset="images/Gaming Lounge PC.jpg 800w,
+              images/Gaming Lounge PC.jpg 400w"
+      sizes="(max-width: 480px) 100vw,
+             (max-width: 768px) 90vw,
+             800px"
+      alt="PC gaming area"
+      class="lightbox-trigger"
+      data-src="images/Gaming Lounge PC.jpg"
+      data-caption="PC Zone">
+    <p>PC Zone</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/gaming lounge Playstation.jpg"
+      srcset="images/gaming lounge Playstation.jpg 800w,
+              images/gaming lounge Playstation.jpg 400w"
+      sizes="(max-width: 480px) 100vw,
+             (max-width: 768px) 90vw,
+             800px"
+      alt="PlayStation gaming area"
+      class="lightbox-trigger"
+      data-src="images/gaming lounge Playstation.jpg"
+      data-caption="PlayStation Zone">
+    <p>PlayStation Zone</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/gaming lounge xbox.jpg"
+      srcset="images/gaming lounge xbox.jpg 800w,
+              images/gaming lounge xbox.jpg 400w"
+      sizes="(max-width: 480px) 100vw,
+             (max-width: 768px) 90vw,
+             800px"
+      alt="Xbox gaming area"
+      class="lightbox-trigger"
+      data-src="images/gaming lounge xbox.jpg"
+      data-caption="Xbox Zone">
+    <p>Xbox Zone</p>
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox">
+  <span id="lightbox-close" class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption" class="lightbox-caption"></p>
+</div>
+
+<!-- Tournament Registration -->
+<section>
+  <h2>Register for the Tournament</h2>
+  <p>Sign up for the next tournament and secure your spot.</p>
+
+  <form id="tournament-form">
+
+    <label for="t-name">Name</label>
+    <input type="text" id="t-name" placeholder="Enter your name">
+
+    <label for="t-game">Preferred Game</label>
+    <select id="t-game">
+      <option value="">Select a game</option>
+      <option value="Warzone">Call of Duty: Warzone</option>
+      <option value="Fortnite">Fortnite</option>
+      <option value="Apex Legends">Apex Legends</option>
+      <option value="FIFA">EA Sports FC</option>
+      <option value="Valorant">Valorant</option>
+    </select>
+
+    <label for="t-platform">Platform</label>
+    <select id="t-platform">
+      <option value="">Select a platform</option>
+      <option value="PC">PC</option>
+      <option value="PlayStation">PlayStation</option>
+      <option value="Xbox">Xbox</option>
+    </select>
+
+    <input type="submit" value="Register Now">
+
+  </form>
+
+  <div id="tournament-response"></div>
+
+  <div id="registrations-list">
+    <h3>Current Registrations</h3>
+    <ul id="registrations"></ul>
+    <button id="clear-registrations">Clear All Registrations</button>
+  </div>
+
+</section>
+
+    <section class="cta">
+      <h2>Ready to Play?</h2>
+      <a href="contact.html" class="btn">Book Your Session</a>
+    </section>
+
+<button id="back-to-top" title="Back to top">&#8679;</button>
+
+    <footer>
+      <p>Diepkloof Gaming Lounge</p>
+      <p>Email: info@gaminglounge.co.za</p>
+      <p>Location: Diepkloof, Soweto</p>
+    </footer>
+   
+<div id="cookie-banner">
+  <p>We use cookies to improve your experience on our website. 
+  By continuing to browse you agree to our use of cookies.</p>
+  <div>
+    <button id="cookie-accept" class="btn">Accept</button>
+    <button id="cookie-decline">Decline</button>
+  </div>
+</div>
+
+ <script src="games.js"></script>
+    <script src="animations.js"></script>
+  </body>
+</html>
+
+

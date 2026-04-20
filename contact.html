@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Diepkloof Gaming Lounge. Find our location in Diepkloof Soweto, opening hours, phone number and social media.">
+  <meta name="keywords" content="contact gaming lounge, Diepkloof location, gaming lounge address, Soweto gaming">
+  <meta name="author" content="Trinity Sabelo Mhlathi">
+  <title>Diepkloof Gaming Lounge - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+  <body>
+    <!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-content">
+    <h2>Diepkloof Gaming Lounge</h2>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p>Loading...</p>
+  </div>
+</div>
+
+    <header>
+      <nav class="navbar">
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    
+    <section class="hero">
+      <h1>Contact Us</h1>
+      <p>Have questions or want to book a session? Get in touch with us today.</p>
+    </section>
+
+    
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> 067 834 8085</p>
+      <p><strong>Email:</strong> info@gaminglounge.co.za</p>
+      <p><strong>Address:</strong> 301 Salukwanda Street, Diepkloof</p>
+    </section>
+
+    
+    <section class="hours">
+      <h2>Opening Hours</h2>
+      <table>
+        <tr>
+          <td>Monday - Friday</td>
+          <td>12:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Saturday - Sunday</td>
+          <td>10:00 - 00:00</td>
+        </tr>
+      </table>
+    </section>
+
+   
+   <!-- Contact Form -->
+<section class="contact-action">
+  <h2>Send Us a Message</h2>
+
+  <form id="contact-form">
+
+    <label for="contact-name">Name</label>
+    <input type="text" id="contact-name" name="from_name">
+
+    <label for="contact-email">Email</label>
+    <input type="email" id="contact-email" name="from_email">
+
+    <label for="message-type">Message Type</label>
+    <select id="message-type" name="message_type">
+      <option value="">Select a message type</option>
+      <option value="General Enquiry">General Enquiry</option>
+      <option value="Booking Question">Booking Question</option>
+      <option value="Pricing Question">Pricing Question</option>
+      <option value="Complaint">Complaint</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="contact-message">Message</label>
+<textarea id="contact-message" name="message" rows="5" maxlength="500"></textarea>
+<p id="char-counter">0 / 500 characters</p>
+
+    <input type="submit" value="Send Message">
+
+  </form>
+
+  <div id="form-response"></div>
+
+</section>
+
+<section class="contact-action">
+  <h2>Want to Book a Session?</h2>
+  <p>Fill out our booking form and we will confirm your session.</p>
+  <a href="form.html" class="btn">Go to Booking Form</a>
+</section>
+
+    
+
+<section class="location">
+  <h2>Our Location</h2>
+  <p>Find us in Diepkloof, Soweto.</p>
+  <div id="leaflet-map"></div>
+</section>
+
+    
+    <section class="socials">
+      <h2>Follow Us</h2>
+      <p>Instagram: @DiepkloofGaming</p>
+      <p>Facebook: Diepkloof Gaming Lounge</p>
+    </section>
+
+    
+    <section class="cta">
+      <h2>Ready to Play?</h2>
+      <p>Visit us today and experience gaming like never before.</p>
+      <a href="pricing.html" class="btn">View Pricing</a>
+    </section>
+
+   
+<button id="back-to-top" title="Back to top">&#8679;</button>
+
+    <footer>
+      <p>Diepkloof Gaming Lounge</p>
+      <p>Email: info@gaminglounge.co.za</p>
+      <p>Location: Diepkloof, Soweto</p>
+    </footer>
+
+<div id="cookie-banner">
+  <p>We use cookies to improve your experience on our website. 
+  By continuing to browse you agree to our use of cookies.</p>
+  <div>
+    <button id="cookie-accept" class="btn">Accept</button>
+    <button id="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="contact.js"></script>
+<script src="animations.js"></script>
+  </body>
+</html>

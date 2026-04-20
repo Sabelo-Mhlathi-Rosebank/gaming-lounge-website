@@ -1,0 +1,96 @@
+/* =====================
+   PRINT STYLESHEET
+===================== */
+
+/* Hide elements that should not print */
+header,
+footer,
+#back-to-top,
+#cookie-banner,
+#loader,
+.btn,
+#calculator,
+nav {
+    display: none !important;
+}
+
+/* Reset background for printing */
+body {
+    background: white !important;
+    color: black !important;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: black !important;
+    font-family: Arial, sans-serif;
+}
+
+/* Sections */
+section {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10pt !important;
+    border: none !important;
+    page-break-inside: avoid;
+}
+
+/* Tables */
+table {
+    width: 100% !important;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1pt solid black !important;
+    padding: 8pt !important;
+    color: black !important;
+    background: white !important;
+}
+
+th {
+    background-color: #eeeeee !important;
+    color: black !important;
+}
+
+/* Pricing cards */
+.pricing-card {
+    border: 1pt solid black !important;
+    background: white !important;
+    color: black !important;
+    width: 30% !important;
+    display: inline-block !important;
+    margin: 5pt !important;
+    padding: 10pt !important;
+    page-break-inside: avoid;
+}
+
+.pricing-container {
+    display: block !important;
+}
+
+/* Accordion */
+.accordion-content {
+    display: block !important;
+    color: black !important;
+}
+
+.accordion-btn {
+    background: white !important;
+    color: black !important;
+    border: 1pt solid black !important;
+}
+
+/* Add website URL at bottom of print */
+body::after {
+    content: "Diepkloof Gaming Lounge | info@gaminglounge.co.za | Diepkloof, Soweto";
+    display: block;
+    text-align: center;
+    margin-top: 20pt;
+    font-size: 10pt;
+    color: #333333;
+    border-top: 1pt solid #cccccc;
+    padding-top: 10pt;
+}

@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a gaming session at Diepkloof Gaming Lounge. Fill in your details and we will confirm your booking.">
+  <meta name="keywords" content="book gaming session, gaming booking, reserve gaming, Diepkloof gaming booking">
+  <meta name="author" content="Trinity Sabelo Mhlathi">
+  <title>Diepkloof Gaming Lounge - Book a Session</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-content">
+    <h2>Diepkloof Gaming Lounge</h2>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p>Loading...</p>
+  </div>
+</div>
+
+    <header>
+      <nav class="navbar">
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Book a Session</h1>
+      <p>Fill in your details below and we will get back to you to confirm your booking.</p>
+    </section>
+
+   <form id="booking-form">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="from_name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="from_email">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date">
+
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time">
+
+    <label for="players">Number of Players</label>
+    <input type="number" id="players" name="players" min="1" max="20">
+
+    <label>Platform</label>
+    <div>
+      <input type="radio" name="platform" value="PC"> PC &nbsp;&nbsp;
+      <input type="radio" name="platform" value="PlayStation"> PlayStation &nbsp;&nbsp;
+      <input type="radio" name="platform" value="Xbox"> Xbox
+    </div>
+
+    <br>
+
+    <label>Gender</label>
+    <div>
+      <input type="radio" name="gender" value="Male"> Male &nbsp;&nbsp;
+      <input type="radio" name="gender" value="Female"> Female &nbsp;&nbsp;
+      <input type="radio" name="gender" value="Other"> Other
+    </div>
+
+    <br>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <br>
+
+    <input type="submit" value="Submit Booking">
+    <input type="reset" value="Clear Form">
+
+</form>
+
+<div id="booking-response"></div>
+    </section>
+
+<button id="back-to-top" title="Back to top">&#8679;</button>
+
+    <footer>
+      <p>Diepkloof Gaming Lounge</p>
+      <p>Email: info@gaminglounge.co.za</p>
+      <p>Location: Diepkloof, Soweto</p>
+    </footer>
+
+<div id="cookie-banner">
+  <p>We use cookies to improve your experience on our website. 
+  By continuing to browse you agree to our use of cookies.</p>
+  <div>
+    <button id="cookie-accept" class="btn">Accept</button>
+    <button id="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="form.js"></script>
+<script src="animations.js"></script>
+  </body>
+</html>
